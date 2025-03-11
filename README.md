@@ -25,7 +25,7 @@ The key findings of the research include:
 
 *   **`option_pricing_and_greeks/`:** This directory contains the code for option pricing and calculating Greeks (delta and gamma).
 *   **`hedging_Analysis/`:** This directory contains the code for performing hedging analysis and simulating hedging strategies.
-*   **`hedging/`:** This directory likely contains related hedging code or data. 
+*   **`hedging/`:** This directory contains related hedging code or data. 
    
 
 *   **`thesis/`:** This directory contains the thesis paper in PDF format.
