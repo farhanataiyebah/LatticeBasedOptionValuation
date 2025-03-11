@@ -1,0 +1,9 @@
+function[delta_asian]=CN_delta_asian(contract,dynamics,FD,beta,X,T,t,sigma0,r,q,S0)
+
+displayStart =dynamics.S0 -FD.deltaS.*1.5;
+displayEnd = dynamics.S0+FD.deltaS.*1.5;
+[S0_ALL,AsianPut,~,~,~] = Put_test(contract,dynamics,FD,elasticty,K,T,Sigma,r,NumOfTimeSteps,lambda,SgridM,M_Bermudan,S0,StrCallPut);
+indices = (S0_ALL > displayStart & S0_ALL < displayEnd);
+delta_asian_0 = delta_app(indices);
+gama_app = (delta_app_0(1) - delta_app_0(3)) ./ (2.*FD.deltaS);
+end
